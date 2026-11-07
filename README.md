@@ -13,11 +13,12 @@ practical AI tooling, with an interest in reliable workflows and observability.
 | [MarketPulse Lakehouse](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse) | Checksum-verified ingestion, recovery manifests, raw partitions and idempotent dlt/DuckDB sample loads | **Working local ingestion path** — broader batch analytics planned |
 | [Latency-Aware Data Placement](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-) | Kafka/local Spark demand analysis, EMA/MLlib prediction, Redis/HDFS placement and a [dashboard](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/dashboard.png) | **Course prototype** — WAN latency is explicitly modelled |
 
-## Building towards December v1 releases
+## Core demos in November, v1 releases in December
 
 [Read the four-project delivery roadmap](docs/PORTFOLIO_ROADMAP.md).
 
-The target is **31 December 2026**. SlotSync is a new build; FieldDesk is expanding
+The core demo target is **17 November 2026**, followed by enhancements and
+hardening through **31 December 2026**. SlotSync is a new build; FieldDesk is expanding
 into an evaluated local-model knowledge service; MarketPulse is completing a
 bounded batch lakehouse; and Data Placement is becoming a reproducible tested
 experiment lab. Each repository has an implementation plan and acceptance checks.

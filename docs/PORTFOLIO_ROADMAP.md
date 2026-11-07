@@ -1,6 +1,7 @@
 # Portfolio delivery roadmap — December 2026
 
-Target: four complete, demonstrable local v1 projects by **31 December 2026**.
+Target: four runnable, resume-demonstrable core projects by **17 November 2026**,
+then feature delivery and hardening through **31 December 2026** for v1 releases.
 This is a delivery plan, not a claim that future features already exist.
 
 | Project | Current evidence | v1 scope | Detailed plan |
@@ -10,23 +11,31 @@ This is a delivery plan, not a claim that future features already exist.
 | MarketPulse | Verified market-data sample ingestion, manifests and dlt/DuckDB | Multi-symbol bounded batch processing, quarantine, Parquet, analytics and dashboard | [Plan](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 | Data Placement | Kafka/local Spark, EMA/MLlib, Redis/HDFS and dashboard | Safe configuration/events, strict backend policy, fair replay benchmark and recovery | [Plan](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 
-## Milestones
+## Immediate core sprint
 
-- **7–14 November:** establish source evidence, test/build foundations, booking
-  schema and versioned knowledge records.
-- **15–21 November:** transactional booking/idempotency, document permissions,
-  indexing jobs, bounded ingestion plans and backend policy tests.
-- **22–28 November:** configurable approval workflows, local model adapters,
-  timestamp normalisation, quarantine and safe event processing.
-- **29 November–5 December:** requester/operator interfaces, review queue,
-  Parquet, cursor isolation and repeatable workloads.
-- **6–12 December:** administration/import preview, expanded evaluation, actual
-  local-model demonstration, tested analytics/dashboard and model persistence.
-- **13–19 December:** atomic imports, worker recovery, executed UAT, telemetry,
-  bounded backfill and fair placement benchmark.
-- **20–26 December:** full acceptance scenarios, clean-clone deployment,
-  controlled recovery, replay and graceful shutdown.
-- **27–31 December:** release gates, runbooks, demonstrations and final audit.
+Ten build days run 7–16 November, with 17 November reserved for acceptance and
+repairs. Core work starts with SlotSync tonight rather than waiting for December.
+
+- **SlotSync:** transactional booking and roles, basic configuration/approvals,
+  resource CSV preview/apply, React workflows, audit and executed UAT.
+- **FieldDesk:** versioned documents, durable indexing, real local-model RAG in
+  pgvector, document permissions, validated citations and an operator review flow.
+- **MarketPulse:** bounded multi-symbol ingestion, trusted Parquet/DuckDB loads,
+  idempotency/recovery evidence, SQL summaries and a minimal dashboard.
+- **Data Placement:** validated/safe inputs and configuration, strict backend
+  policy, seeded workload, automated checks and a recorded integration demo.
+
+Core milestones require code and actual demonstration evidence before they are
+used as completed resume claims. A prototype or a planned feature alone does not
+satisfy the expanded core scope.
+
+## After the core: 18 November–31 December
+
+Add richer configuration/import workflows, larger held-out RAG evaluations,
+analytics engineering, broader recovery and permission tests, fair placement
+benchmarks, observability and clean-clone release evidence. Full v1 release
+gates run on 28–31 December. If a core gate is still incomplete, fixing it takes
+priority over optional extensions.
 
 ## Release acceptance
 
