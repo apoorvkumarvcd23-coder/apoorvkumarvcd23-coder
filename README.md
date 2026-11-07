@@ -8,7 +8,7 @@ practical AI tooling, with an interest in reliable workflows and observability.
 
 | Project | What you can inspect now | Current status |
 | --- | --- | --- |
-| [SlotSync](https://github.com/apoorvkumarvcd23-coder/slotsync) | [Architecture, task sequence and acceptance checks](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/IMPLEMENTATION_PLAN.md) for a configurable Java/Spring Boot, React and PostgreSQL booking application | **Planning stage** — no runnable application yet |
+| [SlotSync](https://github.com/apoorvkumarvcd23-coder/slotsync) | Java/Spring Boot + React resource catalogue, PostgreSQL/Flyway migrations, concurrent overlap constraint tests and [Docker runbook](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/RUNBOOK.md); [implemented scope](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/CLAIM_EVIDENCE.md) | **Runnable catalogue foundation** — booking/auth/configuration core still in progress |
 | [FieldDesk](https://github.com/apoorvkumarvcd23-coder/fielddesk) | Cited service-note retrieval, approval-gated tickets, optional pgvector storage, [demo](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/demo.jpg) and a [repeatable retrieval evaluation](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/retrieval-evaluation.md) | **Working local prototype** — hash retrieval and extractive answers |
 | [MarketPulse Lakehouse](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse) | Checksum-verified ingestion, recovery manifests, raw partitions and idempotent dlt/DuckDB sample loads | **Working local ingestion path** — broader batch analytics planned |
 | [Latency-Aware Data Placement](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-) | Kafka/local Spark demand analysis, EMA/MLlib prediction, Redis/HDFS placement and a [dashboard](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/dashboard.png) | **Course prototype** — WAN latency is explicitly modelled |
@@ -26,7 +26,7 @@ Current implementations and planned extensions are labelled separately. Release
 status follows working demos, tests and recorded evidence.
 
 **Current tools:** Python, SQL, PostgreSQL, FastAPI, Docker, Git, data pipelines
-and retrieval systems. SlotSync's planned implementation adds Java, Spring Boot,
+and retrieval systems. SlotSync's catalogue foundation adds Java, Spring Boot,
 React and TypeScript.
 
 [Email](mailto:apoorv.kumar.verma@gmail.com)
