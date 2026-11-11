@@ -9,7 +9,7 @@ This is a delivery plan, not a claim that future features already exist.
 | SlotSync | Runnable requester sign-in/book/cancel, idempotency, atomic audit and real PostgreSQL/browser checks | Configurable policies/approvals, CSV import, complete UAT and release acceptance | [Plan](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 | FieldDesk | Versioned indexing, identity/document permissions and actual local-model cited RAG API; offline baseline diagnostic retained | Operator/review UI, RAG-to-ticket scenario, held-out evaluation and release hardening | [Plan](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 | MarketPulse | One-day three-symbol verified archives, typed Parquet/DuckDB, idempotent backfill and SQL/Streamlit; real 4,320-key run/replay | One-month budgets, broad quarantine/recovery, dbt and final release gates | [Plan](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/IMPLEMENTATION_PLAN.md) |
-| Data Placement | Kafka/local Spark, EMA/MLlib, Redis/HDFS and dashboard | Safe configuration/events, strict backend policy, fair replay benchmark and recovery | [Plan](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/IMPLEMENTATION_PLAN.md) |
+| Data Placement | Validated configuration/events, safe strict/fallback storage, atomic Redis capacity and actual seeded Kafka/Spark MLlib/Redis replay with dashboard evidence | Actual HDFS integration, fair replay benchmarks, model persistence, checkpoint/recovery and final acceptance | [Plan](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 
 ## Immediate core sprint
 
