@@ -8,9 +8,9 @@ practical AI tooling, with an interest in reliable workflows and observability.
 
 | Project | What you can inspect now | Current status |
 | --- | --- | --- |
-| [SlotSync](https://github.com/apoorvkumarvcd23-coder/slotsync) | Java/Spring Boot + React resource catalogue, PostgreSQL/Flyway migrations, concurrent overlap constraint tests and [Docker runbook](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/RUNBOOK.md); [implemented scope](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/CLAIM_EVIDENCE.md) | **Runnable catalogue foundation** — booking/auth/configuration core still in progress |
-| [FieldDesk](https://github.com/apoorvkumarvcd23-coder/fielddesk) | Cited offline retrieval and approved tickets; versioned chunks, a durable index worker and [actual 768-dimensional pgvector indexing/restart evidence](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/indexing-demo-2026-11-09.json); [scope and checks](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/CLAIM_EVIDENCE.md) | **Working indexing foundation** — chat remains hash/extractive; permission-aware model answers pending |
-| [MarketPulse Lakehouse](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse) | Checksum-verified ingestion, recovery manifests, raw partitions and idempotent dlt/DuckDB sample loads | **Working local ingestion path** — broader batch analytics planned |
+| [SlotSync](https://github.com/apoorvkumarvcd23-coder/slotsync) | Java/Spring Boot + React sign-in and requester bookings; PostgreSQL overlap protection, actor-scoped retries and atomic audit; [booking runbook](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/BOOKING_API.md) | **Runnable requester workflow** — approval/configuration/CSV and full UAT remain |
+| [FieldDesk](https://github.com/apoorvkumarvcd23-coder/fielddesk) | Versioned chunks and durable indexing; identity/document grants, learned retrieval and local LLM answers with validated citations; [actual-model runbook/evidence](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/RAG_RUNBOOK.md) | **Permission-aware RAG API** — operator/review UI and ticket integration remain; original offline baseline retained |
+| [MarketPulse Lakehouse](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse) | Bounded BTC/ETH/SOL archives → typed UTC/decimal candles → dlt/DuckDB and partitioned Parquet → SQL/Streamlit; [actual 4,320-key run/replay](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/public-run-2026-11-11.json) | **Runnable one-day batch analytics** — clean-clone final acceptance and December extensions remain |
 | [Latency-Aware Data Placement](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-) | Kafka/local Spark demand analysis, EMA/MLlib prediction, Redis/HDFS placement and a [dashboard](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/dashboard.png) | **Course prototype** — WAN latency is explicitly modelled |
 
 ## Core demos in November, v1 releases in December
@@ -26,7 +26,7 @@ Current implementations and planned extensions are labelled separately. Release
 status follows working demos, tests and recorded evidence.
 
 **Current tools:** Python, SQL, PostgreSQL, FastAPI, Docker, Git, data pipelines
-and retrieval systems. SlotSync's catalogue foundation adds Java, Spring Boot,
+and retrieval systems. SlotSync's booking workflow adds Java, Spring Boot,
 React and TypeScript.
 
 [Email](mailto:apoorv.kumar.verma@gmail.com)

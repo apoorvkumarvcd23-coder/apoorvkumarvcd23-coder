@@ -6,15 +6,16 @@ This is a delivery plan, not a claim that future features already exist.
 
 | Project | Current evidence | v1 scope | Detailed plan |
 | --- | --- | --- | --- |
-| SlotSync | Planning documents; no runnable code yet | Configurable booking, database overlap protection, approvals, CSV import and UAT | [Plan](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/IMPLEMENTATION_PLAN.md) |
-| FieldDesk | Working offline retrieval/approved tickets and a 16-question diagnostic | Document permissions, durable indexing, local embeddings/LLM, source checks and review queue | [Plan](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/IMPLEMENTATION_PLAN.md) |
-| MarketPulse | Verified market-data sample ingestion, manifests and dlt/DuckDB | Multi-symbol bounded batch processing, quarantine, Parquet, analytics and dashboard | [Plan](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/IMPLEMENTATION_PLAN.md) |
+| SlotSync | Runnable requester sign-in/book/cancel, idempotency, atomic audit and real PostgreSQL/browser checks | Configurable policies/approvals, CSV import, complete UAT and release acceptance | [Plan](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/IMPLEMENTATION_PLAN.md) |
+| FieldDesk | Versioned indexing, identity/document permissions and actual local-model cited RAG API; offline baseline diagnostic retained | Operator/review UI, RAG-to-ticket scenario, held-out evaluation and release hardening | [Plan](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/IMPLEMENTATION_PLAN.md) |
+| MarketPulse | One-day three-symbol verified archives, typed Parquet/DuckDB, idempotent backfill and SQL/Streamlit; real 4,320-key run/replay | One-month budgets, broad quarantine/recovery, dbt and final release gates | [Plan](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 | Data Placement | Kafka/local Spark, EMA/MLlib, Redis/HDFS and dashboard | Safe configuration/events, strict backend policy, fair replay benchmark and recovery | [Plan](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 
 ## Immediate core sprint
 
 Ten build days run 7–16 November, with 17 November reserved for acceptance and
-repairs. Core work starts with SlotSync tonight rather than waiting for December.
+repairs. Core work began with SlotSync on 7 November. Verified slices are shown
+above; remaining workflows still need their scheduled implementation/acceptance.
 
 - **SlotSync:** transactional booking and roles, basic configuration/approvals,
   resource CSV preview/apply, React workflows, audit and executed UAT.
@@ -46,7 +47,8 @@ and documented limitations. A version tag is earned by the checks, not the date.
 FieldDesk retains a deterministic offline baseline and separately verifies real
 local inference. MarketPulse's two-year cloud/live-streaming roadmap is a later
 phase. Data Placement separates modelled WAN latency from measured local I/O.
-SlotSync does not claim delivered Java functionality until the application runs.
+SlotSync's Java booking slice is runnable; the complete configuration/approval
+workflow and final acceptance are still required before a core release.
 
 Daily work produces meaningful verified changes, with no empty, padded or
 backdated commits. Missed tasks carry forward according to dependencies.
