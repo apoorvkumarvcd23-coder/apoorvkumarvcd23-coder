@@ -8,8 +8,8 @@ This is a delivery plan, not a claim that future features already exist.
 | --- | --- | --- | --- |
 | SlotSync | Requester/approver/admin React workflows, versioned duration/approval policy, atomic CSV import/replay and persisted audit; real PostgreSQL/browser checks | Rich policy/opening hours, CSV mapping/updates, broader UAT and final release acceptance | [Plan](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 | FieldDesk | Versioned indexing, granted local-model RAG, operator ingest/jobs, opt-in review and identity-scoped human-approved tickets; actual browser/model proof and original offline baseline | Held-out evaluation, broader retention/quotas, recovery and final release hardening | [Plan](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/IMPLEMENTATION_PLAN.md) |
-| MarketPulse | One-day three-symbol verified archives, typed Parquet/DuckDB, idempotent backfill and SQL/Streamlit; real 4,320-key run/replay | One-month budgets, broad quarantine/recovery, dbt and final release gates | [Plan](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/IMPLEMENTATION_PLAN.md) |
-| Data Placement | Validated configuration/events, safe strict/fallback storage, atomic Redis capacity and actual seeded Kafka/Spark MLlib/Redis replay with dashboard evidence | Actual HDFS integration, fair replay benchmarks, model persistence, checkpoint/recovery and final acceptance | [Plan](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/IMPLEMENTATION_PLAN.md) |
+| MarketPulse | One-day typed Parquet/DuckDB/SQL/Streamlit, clean CLI/browser replay and byte-preserving rejection; native public 4,320-key run plus separate Linux offline proof | One-month budgets, broad quarantine/recovery, dbt and final release gates | [Plan](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/IMPLEMENTATION_PLAN.md) |
+| Data Placement | Safe configuration/events, bounded Redis and actual Kafka/local Spark MLlib/HDFS replay; strict outage denials, verified-mirror offline writes/recovery and browser states | Fair replay benchmarks, model persistence, broader checkpoint/recovery and final acceptance | [Plan](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/IMPLEMENTATION_PLAN.md) |
 
 ## Immediate core sprint
 
@@ -47,8 +47,8 @@ and documented limitations. A version tag is earned by the checks, not the date.
 FieldDesk retains a deterministic offline baseline and separately verifies real
 local inference. MarketPulse's two-year cloud/live-streaming roadmap is a later
 phase. Data Placement separates modelled WAN latency from measured local I/O.
-SlotSync's Java booking slice is runnable; the complete configuration/approval
-workflow and final acceptance are still required before a core release.
+SlotSync's booking/configuration/approval/import workflows are runnable; formal
+UAT and final acceptance are still required before a core release.
 
 Daily work produces meaningful verified changes, with no empty, padded or
 backdated commits. Missed tasks carry forward according to dependencies.
