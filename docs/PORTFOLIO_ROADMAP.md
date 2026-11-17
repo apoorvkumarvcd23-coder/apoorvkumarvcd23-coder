@@ -1,8 +1,9 @@
 # Portfolio delivery roadmap — December 2026
 
-Target: four runnable, resume-demonstrable core projects by **17 November 2026**,
-then feature delivery and hardening through **31 December 2026** for v1 releases.
-This is a delivery plan, not a claim that future features already exist.
+Four runnable cores were accepted on **18 November 2026**, carried forward from
+the **17 November** target. [Inspect the v0.1.0 tags, exact-commit CI and bounded
+claims](CORE_RELEASES_2026-11-18.md). Feature delivery and hardening continue
+through **31 December 2026**; full v1 releases remain subject to their gates.
 
 | Project | Current evidence | v1 scope | Detailed plan |
 | --- | --- | --- | --- |
@@ -15,7 +16,8 @@ This is a delivery plan, not a claim that future features already exist.
 
 Ten build days run 7–16 November, with 17 November reserved for acceptance and
 repairs. Core work began with SlotSync on 7 November. Verified slices are shown
-above; remaining workflows still need their scheduled implementation/acceptance.
+above; final acceptance carried into 18 November and passed after the SlotSync
+admin loading-race repair. All four annotated core tags are published.
 
 - **SlotSync:** transactional booking and roles, basic configuration/approvals,
   resource CSV preview/apply, React workflows, audit and executed UAT.
@@ -49,7 +51,9 @@ local inference. MarketPulse's two-year cloud/live-streaming roadmap is a later
 phase. Data Placement separates modelled WAN latency from measured local I/O.
 SlotSync's five-case booking/configuration/import UAT and FieldDesk's full
 app-process stop/start with fresh cited inference are verified on 16 November.
-Final four-project clean-clone/claim audit remains 17 November before core tags.
+Final four-project clean-clone/claim audit completed 18 November. The exact tagged
+commits passed their complete CI and actual integration artifact gates. Richer
+SlotSync policy work carries forward before later dependency-ready extensions.
 
 Daily work produces meaningful verified changes, with no empty, padded or
 backdated commits. Missed tasks carry forward according to dependencies.

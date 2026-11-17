@@ -8,22 +8,23 @@ practical AI tooling, with an interest in reliable workflows and observability.
 
 | Project | What you can inspect now | Current status |
 | --- | --- | --- |
-| [SlotSync](https://github.com/apoorvkumarvcd23-coder/slotsync) | Java/Spring Boot + React requester/approver/admin workspaces; PostgreSQL conflict protection, versioned policies, atomic CSV import/replay and exact audit; [five-case UAT and app-restart replay](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/CORE_UAT.md) | **Five-case UAT verified** — final core acceptance remains 17 November |
-| [FieldDesk](https://github.com/apoorvkumarvcd23-coder/fielddesk) | Versioned indexing, identity/document grants, cited local-model answers, operator ingest/review and human-approved tickets; [actual-model workflow and full app-process restart](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/OPERATOR_WORKFLOW.md) | **Runnable RAG/operator workflow with process recovery verified** — final core acceptance and held-out evaluation remain; offline baseline retained |
-| [MarketPulse Lakehouse](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse) | BTC/ETH/SOL → typed UTC/decimal candles → dlt/DuckDB/Parquet → SQL/Streamlit; clean CLI/browser replay and rejected-input preservation; [actual 4,320-key run and screenshots](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/CLEAN_INTEGRATION.md) | **Verified one-day batch integration** — final acceptance audit and December extensions remain |
-| [Latency-Aware Data Placement](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-) | Seeded Kafka/local Spark MLlib/Redis/HDFS replay, strict outage denials and verified-mirror recovery with dashboard checks; [real HDFS evidence](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/HDFS_INTEGRATION.md) | **Verified real-service integration lab** — final acceptance and fair benchmarks remain; WAN latency is modelled |
+| [SlotSync](https://github.com/apoorvkumarvcd23-coder/slotsync) | Java/Spring Boot + React requester/approver/admin workspaces; PostgreSQL conflict protection, versioned policies, atomic CSV import/replay and exact audit; [five-case UAT and app-restart replay](https://github.com/apoorvkumarvcd23-coder/slotsync/blob/main/docs/CORE_UAT.md) | **v0.1.0 core accepted 18 November** — [release evidence](docs/CORE_RELEASES_2026-11-18.md); richer policy/import work follows |
+| [FieldDesk](https://github.com/apoorvkumarvcd23-coder/fielddesk) | Versioned indexing, identity/document grants, cited local-model answers, operator ingest/review and human-approved tickets; [actual-model workflow and full app-process restart](https://github.com/apoorvkumarvcd23-coder/fielddesk/blob/main/docs/OPERATOR_WORKFLOW.md) | **v0.1.0 core accepted 18 November** — actual-model/pgvector recovery verified; held-out quality evaluation remains |
+| [MarketPulse Lakehouse](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse) | BTC/ETH/SOL → typed UTC/decimal candles → dlt/DuckDB/Parquet → SQL/Streamlit; clean CLI/browser replay and rejected-input preservation; [actual 4,320-key run and screenshots](https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/blob/main/docs/CLEAN_INTEGRATION.md) | **v0.1.0 core accepted 18 November** — one public UTC day verified; month-scale/dbt work remains |
+| [Latency-Aware Data Placement](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-) | Seeded Kafka/local Spark MLlib/Redis/HDFS replay, strict outage denials and verified-mirror recovery with dashboard checks; [real HDFS evidence](https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/blob/main/docs/HDFS_INTEGRATION.md) | **v0.1.0 core accepted 18 November** — real HDFS recovery verified; fair benchmarks remain; WAN latency is modelled |
 
 ## Core demos in November, v1 releases in December
 
 [Read the four-project delivery roadmap](docs/PORTFOLIO_ROADMAP.md).
 
-The core demo target is **17 November 2026**, followed by enhancements and
-hardening through **31 December 2026**. SlotSync is a new build; FieldDesk is expanding
-into an evaluated local-model knowledge service; MarketPulse is completing a
-bounded batch lakehouse; and Data Placement is becoming a reproducible tested
-experiment lab. Each repository has an implementation plan and acceptance checks.
-Current implementations and planned extensions are labelled separately. Release
-status follows working demos, tests and recorded evidence.
+The four runnable cores were accepted on **18 November 2026**, following the
+17 November target. Each has an annotated **v0.1.0** tag, passing CI on the exact
+tagged commit, a runnable demo, screenshots and a claim-to-code/test ledger.
+[Inspect the immutable releases, checks and limitations](docs/CORE_RELEASES_2026-11-18.md).
+
+Feature delivery and hardening continue through **31 December 2026**. Held-out
+RAG evaluation, richer booking policies, month-scale analytics and fair placement
+benchmarks remain planned work; full **v1.0.0** release gates are still open.
 
 **Current tools:** Python, SQL, PostgreSQL, FastAPI, Docker, Git, data pipelines
 and retrieval systems. SlotSync's booking workflow adds Java, Spring Boot,

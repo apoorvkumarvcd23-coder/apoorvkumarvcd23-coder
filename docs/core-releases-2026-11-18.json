@@ -1,0 +1,227 @@
+{
+  "accepted_date_ist": "2026-11-18",
+  "target_date_ist": "2026-11-17",
+  "release": "v0.1.0",
+  "scope": "Bounded runnable portfolio cores; full December v1.0.0 gates remain open.",
+  "native_observation_date_ist": "2026-11-17",
+  "ci_and_tag_date_ist": "2026-11-18",
+  "projects": [
+    {
+      "key": "slotsync",
+      "repository": "slotsync",
+      "commit": "82b2c56a0064090829e479e71dfd1249e17f1723",
+      "tag": "v0.1.0",
+      "annotated_tag_object": "1515754a9c90cc33d52f99b29a36ea51dd9ee6cf",
+      "tagger_date": "2026-11-18T01:03:28+05:30",
+      "remote_peeled_commit": "82b2c56a0064090829e479e71dfd1249e17f1723",
+      "ci": "https://github.com/apoorvkumarvcd23-coder/slotsync/actions/runs/44158745407",
+      "ci_run": 44158745407,
+      "verified_at_utc": "2026-11-17T19:33:32.583316+00:00",
+      "name": "SlotSync",
+      "ci_jobs": [
+        {
+          "id": 134306491343,
+          "name": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "verified_checks": {
+        "status": "passed",
+        "java_integration_checks": 39,
+        "frontend_checks": 14,
+        "formal_uat_cases": 5,
+        "exact_restart_state_checks": 8,
+        "browser_workflow": "passed",
+        "artifacts": [
+          {
+            "key": "slotsync",
+            "repo": "slotsync",
+            "run": 44158745407,
+            "id": 14362432332,
+            "name": "foundation-evidence",
+            "digest": "sha256:8b8421d92dfe7baa949ada15599de0fb4955b6c5b4c8fe8f77f6ed2919e88dff",
+            "head": "82b2c56a0064090829e479e71dfd1249e17f1723"
+          }
+        ]
+      },
+      "limits": "Synthetic accounts and bounded UAT. Opening hours, richer policy rules, CSV update/mapping and broader load/security UAT remain December work."
+    },
+    {
+      "key": "fielddesk",
+      "repository": "fielddesk",
+      "commit": "ca4d02af63c46eee86c9b2cf6e0204ee895acb2d",
+      "tag": "v0.1.0",
+      "annotated_tag_object": "707bd28aae439597c4af91632f63cdb691d35076",
+      "tagger_date": "2026-11-18T01:03:32+05:30",
+      "remote_peeled_commit": "ca4d02af63c46eee86c9b2cf6e0204ee895acb2d",
+      "ci": "https://github.com/apoorvkumarvcd23-coder/fielddesk/actions/runs/44157066230",
+      "ci_run": 44157066230,
+      "verified_at_utc": "2026-11-17T19:33:36.485950+00:00",
+      "name": "FieldDesk",
+      "ci_jobs": [
+        {
+          "id": 134300527946,
+          "name": "actual-model-rag",
+          "conclusion": "success"
+        },
+        {
+          "id": 134300528585,
+          "name": "pgvector",
+          "conclusion": "success"
+        },
+        {
+          "id": 134300528725,
+          "name": "sqlite",
+          "conclusion": "success"
+        }
+      ],
+      "verified_checks": {
+        "status": "passed",
+        "unit_contract_tests_each_backend": 61,
+        "backends": [
+          "sqlite",
+          "pgvector"
+        ],
+        "real_model_cases": 6,
+        "embedding_dimensions": 768,
+        "generation_model": {
+          "model": "qwen3.5:9b",
+          "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+        },
+        "embedding_model": {
+          "backend": "ollama",
+          "model": "nomic-embed-text:v1.5",
+          "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+          "dimensions": 768,
+          "chunking_version": "chars-600-overlap-80-v1"
+        },
+        "exited_app_processes": 4,
+        "app_state_and_fresh_cited_answer_after_restart": true,
+        "index_worker_crash_and_replay": "passed",
+        "held_out_quality_claim": false,
+        "artifacts": [
+          {
+            "key": "fielddesk",
+            "repo": "fielddesk",
+            "run": 44157066230,
+            "id": 14361233335,
+            "name": "actual-pgvector-rag",
+            "digest": "sha256:87476276d5b76eb3d2a2400553837be9ab6dfdab60ee502dec18a2e115f580f4",
+            "head": "ca4d02af63c46eee86c9b2cf6e0204ee895acb2d"
+          }
+        ]
+      },
+      "limits": "Synthetic workflow proof does not establish held-out answer accuracy. Original 16-case offline diagnostic is retained (9/10 answerable top-1, 4/6 unsupported handoff, 18/18 source quotations); it is separate from actual-model evidence. The 40-case evaluation, broader retention/quotas and production ticket-provider integration remain."
+    },
+    {
+      "key": "marketpulse",
+      "repository": "marketpulse-lakehouse",
+      "commit": "074a2e860b6c5b82ebedfa423b19aba3f7f2c3e8",
+      "tag": "v0.1.0",
+      "annotated_tag_object": "da9681ba745600f67c66605c8bf1cbabf8ce8825",
+      "tagger_date": "2026-11-18T01:03:36+05:30",
+      "remote_peeled_commit": "074a2e860b6c5b82ebedfa423b19aba3f7f2c3e8",
+      "ci": "https://github.com/apoorvkumarvcd23-coder/marketpulse-lakehouse/actions/runs/44157080628",
+      "ci_run": 44157080628,
+      "verified_at_utc": "2026-11-17T19:33:40.812668+00:00",
+      "name": "MarketPulse Lakehouse",
+      "ci_jobs": [
+        {
+          "id": 134300578541,
+          "name": "local-batch",
+          "conclusion": "success"
+        }
+      ],
+      "verified_checks": {
+        "status": "passed",
+        "tests": 162,
+        "linux_fixture_keys_each_unit": 9,
+        "timestamp_units": [
+          "ms",
+          "us"
+        ],
+        "rejected_faults_preserve_trusted_bytes": 2,
+        "browser_states": 3,
+        "fresh_windows_lf_checkout": "verified separately",
+        "native_public_keys_17_november": 4320,
+        "ci_public_download": false,
+        "artifacts": [
+          {
+            "key": "marketpulse",
+            "repo": "marketpulse-lakehouse",
+            "run": 44157080628,
+            "id": 14360334720,
+            "name": "marketpulse-clean-integration",
+            "digest": "sha256:d6c7f3e2fcbbb5604d5d737d715213dff25ac55b9f6fc2d898967a727a9073a0",
+            "head": "074a2e860b6c5b82ebedfa423b19aba3f7f2c3e8"
+          }
+        ]
+      },
+      "limits": "One public UTC day and tiny Linux offline fixtures, without month-scale or throughput claims. Linux CI does not download public archives. Month budgets, dbt/marts and broader recovery remain."
+    },
+    {
+      "key": "placement",
+      "repository": "Intelligent-Latency-Aware-Data-Placement-",
+      "commit": "a975df617d05f057a0aa1352b84f5cedfba29858",
+      "tag": "v0.1.0",
+      "annotated_tag_object": "a1394d60e18e0a272f3ae280d433f3e6fbdef178",
+      "tagger_date": "2026-11-18T01:03:40+05:30",
+      "remote_peeled_commit": "a975df617d05f057a0aa1352b84f5cedfba29858",
+      "ci": "https://github.com/apoorvkumarvcd23-coder/Intelligent-Latency-Aware-Data-Placement-/actions/runs/44157091174",
+      "ci_run": 44157091174,
+      "verified_at_utc": "2026-11-17T19:33:44.648403+00:00",
+      "name": "Latency-Aware Data Placement",
+      "ci_jobs": [
+        {
+          "id": 134300621696,
+          "name": "integration",
+          "conclusion": "success"
+        },
+        {
+          "id": 134300621717,
+          "name": "boundaries",
+          "conclusion": "success"
+        },
+        {
+          "id": 134300621836,
+          "name": "hdfs-integration",
+          "conclusion": "success"
+        }
+      ],
+      "verified_checks": {
+        "status": "passed",
+        "linux_tests": 63,
+        "seed": 17,
+        "received": 148,
+        "accepted": 144,
+        "invalid": 3,
+        "duplicates": 1,
+        "spark_version": "3.5.1",
+        "actual_hdfs_outage_recovery": "passed",
+        "verified_hdfs_datasets": 10,
+        "held_out_benchmark_claim": false,
+        "artifacts": [
+          {
+            "key": "placement",
+            "repo": "Intelligent-Latency-Aware-Data-Placement-",
+            "run": 44157091174,
+            "id": 14362955137,
+            "name": "actual-hdfs-evidence",
+            "digest": "sha256:242ae946ffb3f24183aa5c1c7c9c54548e0a75524db1849de26ebf444b43a9a8",
+            "head": "a975df617d05f057a0aa1352b84f5cedfba29858"
+          },
+          {
+            "key": "placement",
+            "repo": "Intelligent-Latency-Aware-Data-Placement-",
+            "run": 44157091174,
+            "id": 14360619481,
+            "name": "placement-core-evidence",
+            "digest": "sha256:0fa5f71b69ed8510f93b541c69799d1c37d2c82c28e60b2af5f1f61b9ed2c3da",
+            "head": "a975df617d05f057a0aa1352b84f5cedfba29858"
+          }
+        ]
+      },
+      "limits": "Single-node integration lab with synthetic data. Tier/WAN latency is modelled and local I/O is measured separately. Tiny-fixture cycle rates and overlapping rolling windows are not fair held-out predictive or performance benchmarks. Model persistence, checkpointing and fair baselines remain."
+    }
+  ]
+}
